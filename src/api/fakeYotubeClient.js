@@ -1,12 +1,10 @@
-// Mock Data
-
-import axios from "axios";
+import axios from 'axios';
 
 export default class FakeYoutubeClient {
   async search() {
-    return axios.get("/videos/search.json");
+    return axios.get('/videos/search.json');
   }
   async videos() {
-    return axios.get("/videos/popular.json");
+    return axios.get('/videos/popular.json');
   }
 }

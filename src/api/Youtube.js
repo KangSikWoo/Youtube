@@ -11,9 +11,9 @@ export default class Youtube {
     return this.apiClient
       .search({
         params: {
-          part: "snippet",
+          part: 'snippet',
           maxResults: 25,
-          type: "video",
+          type: 'video',
           q: keyword,
         },
       })
@@ -25,9 +25,9 @@ export default class Youtube {
     return this.apiClient
       .videos({
         params: {
-          part: "snippet",
+          part: 'snippet',
           maxResults: 25,
-          chart: "mostPopular",
+          chart: 'mostPopular',
         },
       })
       .then((res) => res.data.items);
